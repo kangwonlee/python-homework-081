@@ -5,6 +5,7 @@
 ## Purpose 목적:
 
 * Using the user input, let's implement a program that will evalute a polynomial.<br>사용자 입력을 받아 들여 다항식을 계산하는 프로그램을 만들어 봅시다.
+* Let's try to mimic how some of the widely used numerical software such as MATLAB and Python's NumPy evaluate a polynomial.<br>널리 사용되는 연산 소프트웨어인 MATLAB 이나 Python의 NumPy 가 다항식을 계산하는 방식을 흉내내봅시다.
 
 ## Steps 단계:
 
@@ -16,9 +17,16 @@
 
 ## Instructions 지침:
 
-* Take `int` `n` from input function : maximum order of the polynomial.
+* Take an `int` `n` from input function : maximum order of the polynomial.
 * Print a string of `'=========='`.
-* If `n` is smaller than 2 or larger than 5, print an error message and do not process further. use `if` `elif` `else` block for input validation.
+* Print `n` using the following f string:
+  ``` python
+  f'n = {n:1d}'
+  ```
+* If `n` is smaller than 2 or larger than 5, print following error message and do not process further. Use `if` `elif` `else` block for input validation.
+  ``` python
+  'Error : invalid n (2 <= n <= 5)'
+  ```
 * take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:
   $$
   a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
@@ -28,7 +36,18 @@
   [a_0, a_1, a_2, ... a_n_1, a_n]
   ```
 * Print a string of `'=========='`.
-* If the highest order coefficient ($a_0$) is zero, print an error message and do not process further.
+* Print the number of coefficient `n_coef` using the following f string:
+  ``` python
+  f'n_coef = {n_coef:1d}'
+  ```
+* Print the highest order coefficient ($a_0$) using the following f string:
+  ``` python
+  f'a_0 = {a_0:8d}'
+  ```
+* If the highest order coefficient ($a_0$) is zero, print the following error message and do not process further.
+  ``` python
+  'Error : a_0 is zero'
+  ```
 * take an `int` `x` from input
 * Print a string of `'=========='`.
 * print the `list` containing polynomial coefficiets
@@ -68,6 +87,7 @@ result = 28
 ## Tips 팁:
 
 * Test your program with a small polynomial, like `n=2` and coefficients `[1, 0, 1]` (i.e., $x^2 +1$), to ensure your evaluation is correct before trying larger polynomials.<br>프로그램 확인을 위해 작은 다항식을 활용하세요. 예를 들어 `n=2` 계수 `[1, 0, 1]` (즉, $x^2 +1$) 로 계산이 올바른지 확인한 후 더 큰 다항식을 시도하세요.
+* Assume that the input is valid. If invalid, `int()` would raise an error and quit.<br>입력은 유효하다고 가정. 입력이 유효하지 않은 경우 `int()`가 오류를 발생시키고 중단시킬 것임.
 
 __Happy coding!__
 
