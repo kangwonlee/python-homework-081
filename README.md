@@ -6,12 +6,20 @@
 
 * Using the user input, let's implement a program that will evalute a polynomial.<br>사용자 입력을 받아 들여 다항식을 계산하는 프로그램을 만들어 봅시다.
 
+## Steps 단계:
+
+* Get `n` and validate<br>`n`을 입력받고 검증
+* Collect coefficients in a list<br>매개변수를 입력 받아 `list` 에 저장
+* Check if the highest order coefficient is zero<br>가장 높은 차수의 계수가 0인지 확인
+* Get `x` from input<br>`x`를 입력받음
+* Evaluate the polynomial<br>다항식을 계산
+
 ## Instructions 지침:
 
 * Take `int` `n` from input function : maximum order of the polynomial.
 * Print a string of `'=========='`.
 * If `n` is smaller than 2 or larger than 5, print an error message and do not process further. use `if` `elif` `else` block for input validation.
-* take `n` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:
+* take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:
   $$
   a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
   $$
@@ -28,6 +36,19 @@
 * print the evaluation result of the polynomial at `x`.
 
 ## Example Run 실행 예시:
+
+### `n` == 2
+```
+n = 2
+==========
+a_0 = 1
+a_1 = -6
+a_2 = 9
+==========
+coefs : [1, -6, 9]
+x = 3
+result = 0
+```
 
 ### `n` == 4
 ```
@@ -46,7 +67,7 @@ result = 28
 
 ## Tips 팁:
 
-* please add some more hints here
+* Test your program with a small polynomial, like `n=2` and coefficients `[1, 0, 1]` (i.e., $x^2 +1$), to ensure your evaluation is correct before trying larger polynomials.<br>프로그램 확인을 위해 작은 다항식을 활용하세요. 예를 들어 `n=2` 계수 `[1, 0, 1]` (즉, $x^2 +1$) 로 계산이 올바른지 확인한 후 더 큰 다항식을 시도하세요.
 
 __Happy coding!__
 
