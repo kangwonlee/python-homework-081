@@ -1,31 +1,47 @@
-# Python Homework Template
-Please work on : `exercise.py`
+# Polynomial Evaluation 다항식 계산
+
+* Please work on `exercise.py`.<br>`exercise.py` 파일을 수정하여 제출하세요.
 
 ## Purpose 목적:
 
-Why do we want to do this assignment? What do we want to accomplish?
-
-## Description 설명:
-
-* Describe homework here
+* Using the user input, let's implement a program that will evalute a polynomial.<br>사용자 입력을 받아 들여 다항식을 계산하는 프로그램을 만들어 봅시다.
 
 ## Instructions 지침:
 
-* How to do this homework
-* `classroom.yml` file is at `.github/workflows/` folder. `.github` folder is hidden on the Linux operating system but will be visible on the Github repository.
-* Please set `vars.PYTHON_GRADER_URL` in the `classroom.yml` in the repository settings (Settings > Secrets and Variables > Actions > Variables) to your grader image (e.g., ghcr.io/your-org/python-pytest:latest).
-* Set your AI feedback natural language in `classroom.yml`.
+* Take `int` `n` from input function : maximum order of the polynomial.
+* Print a string of `'=========='`.
+* If `n` is smaller than 2 or larger than 5, print an error message and do not process further. use `if` `elif` `else` block for input validation.
+* take `n` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:
+  $$
+  a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
+  $$
+  will be stored as:
+  ``` python
+  [a_0, a_1, a_2, ... a_n_1, a_n]
+  ```
+* Print a string of `'=========='`.
+* If the highest order coefficient ($a_0$) is zero, print an error message and do not process further.
+* take an `int` `x` from input
+* Print a string of `'=========='`.
+* print the `list` containing polynomial coefficiets
+* print `x` 
+* print the evaluation result of the polynomial at `x`.
 
 ## Example Run 실행 예시:
 
-* input
+### `n` == 4
 ```
-input example here
-```
-* output
-```
-----------
-output example here
+n = 4
+==========
+a_0 = 1
+a_1 = 0
+a_2 = 2
+a_3 = 0
+a_4 = 4
+==========
+coefs : [1, 0, 2, 0, 4]
+x = 2
+result = 28
 ```
 
 ## Tips 팁:
