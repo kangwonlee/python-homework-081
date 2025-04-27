@@ -17,7 +17,10 @@
 
 ## Instructions 지침:
 
-* Take an `int` `n` from input function : maximum order of the polynomial.
+* Take an `int` `n` from input function using the following prompt :
+  ``` python
+  'maximum order of the polynomial in [2, 5] n = '
+  ```
 * Print a string of `'=========='`.
 * Print `n` using the following f string:
   ``` python
@@ -35,6 +38,10 @@
   ``` python
   [a_0, a_1, a_2, ... a_n_1, a_n]
   ```
+  Please use the following prompt:
+  ``` python
+  f'coefficeint a_{i} = '
+  ```
 * Print a string of `'=========='`.
 * Print the number of coefficient `n_coef` using the following f string:
   ``` python
@@ -48,10 +55,16 @@
   ``` python
   'Error : a_0 is zero'
   ```
-* take an `int` `x` from input
+* take an `int` `x` from input using the following prompt:
+  ``` python
+  'x = '
+  ```
 * Print a string of `'=========='`.
-* print the `list` containing polynomial coefficiets
-* print `x` 
+* print the `list` containing polynomial coefficients.
+* print `x` using the following f string:
+  ``` python
+  f'x = {x:8d}'
+  ```
 * print the evaluation result of the polynomial at `x`.
 
 ## Example Run 실행 예시:
