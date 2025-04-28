@@ -77,7 +77,7 @@
 
 ### `n` == 2
 ```
-n = 2
+maximum order of the polynomial in [2, 5] n = 2
 ==========
 n  	           2
 coefficeint a_0 = 1
@@ -95,7 +95,7 @@ result	       0
 
 ### `n` == 4
 ```
-n = 4
+maximum order of the polynomial in [2, 5] n = 4
 ==========
 n  	           4
 coefficeint a_0 = 1
