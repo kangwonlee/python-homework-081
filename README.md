@@ -30,7 +30,7 @@
   ``` python
   'Error : invalid n (2 <= n <= 5)'
   ```
-* take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:<br>`n+1`개의 `int` 계수를 입력으로부터 받아 `list` 로 저장하시오. 높은 차수 부터 낮은 차수의 순서로 저장하시오. 예를 들어: 
+* Take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:<br>`n+1`개의 `int` 계수를 입력으로부터 받아 `list` 로 저장하시오. 높은 차수 부터 낮은 차수의 순서로 저장하시오. 예를 들어 :
   $$
   a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
   $$
@@ -45,11 +45,11 @@
 * Print a string 문자열 출력 : `'=========='`
 * Print the number of coefficient `n_coef` using the following f string :<br>화면에 계수의 갯수 `n_coef` 를 표시하시오. 사용 프롬프트 :
   ``` python
-  f'n_coef = {n_coef:1d}'
+  f'n_coef\t{n_coef:8d}'
   ```
 * Print the highest order coefficient ($a_0$) using the following f string :<br>화면에 가장 높은 차수의 계수 ($a_0$)를 표시하시오. 사용 f문자열 :
   ``` python
-  f'a_0 = {a_0:8d}'
+  f'a_0\t{a_0:8d}'
   ```
 * If the highest order coefficient ($a_0$) is zero, print the following error message and do not process further.<br>가장 높은 차수의 계수 ($a_0$) 가 0이면 다음 오류메시지를 표사하고 이후의 처리는 하지 마시오.
   ``` python
@@ -77,8 +77,8 @@ coefficeint a_0 = 1
 coefficeint a_1 = -6
 coefficeint a_2 = 9
 ==========
-n_coef = 2
-a_0 =        1
+n_coef	       3
+a_0	           1
 x = 3
 ==========
 coefs : [1, -6, 9]
@@ -96,8 +96,8 @@ coefficeint a_2 = 2
 coefficeint a_3 = 0
 coefficeint a_4 = 4
 ==========
-n_coef = 4
-a_0 =        1
+n_coef	       5
+a_0	           1
 x = 2
 ==========
 coefs : [1, 0, 2, 0, 4]
