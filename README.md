@@ -26,7 +26,7 @@
   ``` python
   f'n\t{n:8d}'
   ```
-* If `n` is smaller than 2 or larger than 5, print following error message and do not process further. Use `if` `elif` `else` block for input validation.<br>`n`이 2보다 작거나 5보다 크면 다음 오류 메시지를 표시하고 이후의 처리는 하지 마시오. `if` `elif` `else` 로 해당 입력 검증 로직을 구현하시오.
+* If `n` is smaller than 2 or larger than 5, print following error message and do not process further. Use `if` block for input validation.<br>`n`이 2보다 작거나 5보다 크면 다음 오류 메시지를 표시하고 이후의 처리는 하지 마시오. `if` 로 해당 입력 검증 로직을 구현하시오.
   ``` python
   'Error : invalid n (2 <= n <= 5)'
   ```
