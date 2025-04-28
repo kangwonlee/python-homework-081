@@ -73,6 +73,9 @@
   f'result\t{result:8d}'
   ```
 
+* Do not use 다음 키워드는 사용 않기 바람 : 'while', 'try', 'except', 'def', 'return', and 'lambda'.
+* Please consider using these functions 다음 함수 사용을 생각해 보기 바랍니다 : 'print', 'input', 'int', 'range', 'len', and 'enumerate'
+
 ## Example Run 실행 예시:
 
 ### `n` == 2
