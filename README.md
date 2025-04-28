@@ -17,55 +17,55 @@
 
 ## Instructions 지침:
 
-* Take an `int` `n` from input function using the following prompt :
+* Take an `int` `n` from input function using the following prompt :<br>`int` 값을 받아 변수 `n`에 저장하시오. 사용 프롬프트 :
   ``` python
   'maximum order of the polynomial in [2, 5] n = '
   ```
-* Print a string of `'=========='`.
-* Print `n` using the following f string:
+* Print a string 문자열 출력 : `'=========='`
+* Print `n` using the following f string :<br>`n`을 표시하시오. 사용 f 문자열 :
   ``` python
   f'n = {n:1d}'
   ```
-* If `n` is smaller than 2 or larger than 5, print following error message and do not process further. Use `if` `elif` `else` block for input validation.
+* If `n` is smaller than 2 or larger than 5, print following error message and do not process further. Use `if` `elif` `else` block for input validation.<br>`n`이 2보다 작거나 5보다 크면 다음 오류 메시지를 표시하고 이후의 처리는 하지 마시오. `if` `elif` `else` 로 해당 입력 검증 로직을 구현하시오.
   ``` python
   'Error : invalid n (2 <= n <= 5)'
   ```
-* take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:
+* take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:<br>`n+1`개의 `int` 계수를 입력으로부터 받아 `list` 로 저장하시오. 높은 차수 부터 낮은 차수의 순서로 저장하시오. 예를 들어: 
   $$
   a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
   $$
-  will be stored as:
+  will be stored as :<br>는 다음과 같이 저장될 것임 :
   ``` python
   [a_0, a_1, a_2, ... a_n_1, a_n]
   ```
-  Please use the following prompt:
+  Please use the following prompt :<br>사용 프롬프트 :
   ``` python
   f'coefficeint a_{i} = '
   ```
-* Print a string of `'=========='`.
-* Print the number of coefficient `n_coef` using the following f string:
+* Print a string 문자열 출력 : `'=========='`
+* Print the number of coefficient `n_coef` using the following f string :<br>화면에 계수의 갯수 `n_coef` 를 표시하시오. 사용 프롬프트 :
   ``` python
   f'n_coef = {n_coef:1d}'
   ```
-* Print the highest order coefficient ($a_0$) using the following f string:
+* Print the highest order coefficient ($a_0$) using the following f string :<br>화면에 가장 높은 차수의 계수 ($a_0$)를 표시하시오. 사용 f 문자열 :
   ``` python
   f'a_0 = {a_0:8d}'
   ```
-* If the highest order coefficient ($a_0$) is zero, print the following error message and do not process further.
+* If the highest order coefficient ($a_0$) is zero, print the following error message and do not process further.<br>가장 높은 차수의 계수 ($a_0$) 가 0이면 다음 오류메시지를 표사하고 이후의 처리는 하지 마시오.
   ``` python
   'Error : a_0 is zero'
   ```
-* take an `int` `x` from input using the following prompt:
+* Take an `int` `x` from input using the following prompt :<br>`int` 형 변수 `x` 를 입력 받으시오. 사용 프롬프트 :
   ``` python
   'x = '
   ```
-* Print a string of `'=========='`.
-* print the `list` containing polynomial coefficients.
-* print `x` using the following f string:
+* Print a string 문자열 출력 : `'=========='`
+* Print the `list` containing polynomial coefficients.<br>화면에 다항식의 계수를 담은 `list`를 표시하시오.
+* Print `x` using the following f string:<br>`x`를 표시하시오. 사용 프롬프트 :
   ``` python
   f'x = {x:8d}'
   ```
-* print the evaluation result of the polynomial at `x`.
+* Print the evaluation result of the polynomial at `x`.<br>`x`에서의 다항식 연산 결과를 표시하시오.
 
 ## Example Run 실행 예시:
 
@@ -78,7 +78,7 @@ a_1 = -6
 a_2 = 9
 ==========
 coefs : [1, -6, 9]
-x = 3
+x =        3
 result = 0
 ```
 
@@ -93,7 +93,7 @@ a_3 = 0
 a_4 = 4
 ==========
 coefs : [1, 0, 2, 0, 4]
-x = 2
+x =        2
 result = 28
 ```
 
