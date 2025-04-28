@@ -60,7 +60,10 @@
   'x = '
   ```
 * Print a string 문자열 출력 : `'=========='`
-* Print the `list` containing polynomial coefficients.<br>화면에 다항식의 계수를 담은 `list`를 표시하시오.
+* Print the `list` containing polynomial coefficients using prefix :<br>화면에 다항식의 계수를 담은 `list`를 표시하시오. 사용 안내 문자열 :
+  ``` python
+  'coefs :'
+  ```
 * Print `x` using the following f string:<br>`x`를 표시하시오. 사용 프롬프트 :
   ``` python
   f'x\t{x:8d}'
