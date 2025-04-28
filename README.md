@@ -79,17 +79,17 @@
 ```
 maximum order of the polynomial in [2, 5] n = 2
 ==========
-n  	           2
+n	       2
 coefficeint a_0 = 1
 coefficeint a_1 = -6
 coefficeint a_2 = 9
 ==========
 n_coef	       3
-a_0	           1
+a_0	       1
 x = 3
 ==========
 coefs : [1, -6, 9]
-x  	           3
+x	       3
 result	       0
 ```
 
@@ -97,7 +97,7 @@ result	       0
 ```
 maximum order of the polynomial in [2, 5] n = 4
 ==========
-n  	           4
+n	       4
 coefficeint a_0 = 1
 coefficeint a_1 = 0
 coefficeint a_2 = 2
@@ -105,11 +105,11 @@ coefficeint a_3 = 0
 coefficeint a_4 = 4
 ==========
 n_coef	       5
-a_0	           1
+a_0	       1
 x = 2
 ==========
 coefs : [1, 0, 2, 0, 4]
-x  	           2
+x	       2
 result	      28
 ```
 
