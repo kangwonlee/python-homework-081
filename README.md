@@ -63,9 +63,12 @@
 * Print the `list` containing polynomial coefficients.<br>화면에 다항식의 계수를 담은 `list`를 표시하시오.
 * Print `x` using the following f string:<br>`x`를 표시하시오. 사용 프롬프트 :
   ``` python
-  f'x = {x:8d}'
+  f'x\t{x:8d}'
   ```
-* Print the evaluation result of the polynomial at `x`.<br>`x`에서의 다항식 연산 결과를 표시하시오.
+* Print the evaluation result of the polynomial at `x` using the following prompt :<br>`x`에서의 다항식 연산 결과를 표시하시오. 사용 프롬프트 :
+  ``` python
+  f'result\t{result:8d}'
+  ```
 
 ## Example Run 실행 예시:
 
@@ -82,8 +85,8 @@ a_0	           1
 x = 3
 ==========
 coefs : [1, -6, 9]
-x =        3
-result = 0
+x  	           3
+result	       0
 ```
 
 ### `n` == 4
@@ -101,8 +104,8 @@ a_0	           1
 x = 2
 ==========
 coefs : [1, 0, 2, 0, 4]
-x =        2
-result = 28
+x  	           2
+result	      28
 ```
 
 ## Tips 팁:
