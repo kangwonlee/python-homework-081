@@ -47,7 +47,7 @@
   ``` python
   f'n_coef = {n_coef:1d}'
   ```
-* Print the highest order coefficient ($a_0$) using the following f string :<br>화면에 가장 높은 차수의 계수 ($a_0$)를 표시하시오. 사용 f 문자열 :
+* Print the highest order coefficient ($a_0$) using the following f string :<br>화면에 가장 높은 차수의 계수 ($a_0$)를 표시하시오. 사용 f문자열 :
   ``` python
   f'a_0 = {a_0:8d}'
   ```
@@ -73,9 +73,13 @@
 ```
 n = 2
 ==========
-a_0 = 1
-a_1 = -6
-a_2 = 9
+coefficeint a_0 = 1
+coefficeint a_1 = -6
+coefficeint a_2 = 9
+==========
+n_coef = 2
+a_0 =        1
+x = 3
 ==========
 coefs : [1, -6, 9]
 x =        3
@@ -86,11 +90,15 @@ result = 0
 ```
 n = 4
 ==========
-a_0 = 1
-a_1 = 0
-a_2 = 2
-a_3 = 0
-a_4 = 4
+coefficeint a_0 = 1
+coefficeint a_1 = 0
+coefficeint a_2 = 2
+coefficeint a_3 = 0
+coefficeint a_4 = 4
+==========
+n_coef = 4
+a_0 =        1
+x = 2
 ==========
 coefs : [1, 0, 2, 0, 4]
 x =        2
