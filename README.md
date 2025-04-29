@@ -31,9 +31,7 @@
   'Error : invalid n (2 <= n <= 5)'
   ```
 * Take `n+1` `int` coefficients from input and store in a `list`. Order would be higher to lower. For example:<br>`n+1`개의 `int` 계수를 입력으로부터 받아 `list` 로 저장하시오. 높은 차수 부터 낮은 차수의 순서로 저장하시오. 예를 들어 :
-  $$
-  a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n
-  $$
+  $a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \cdots + a_{n-1}x + a_n$<br>
   will be stored as :<br>는 다음과 같이 저장될 것임 :
   ``` python
   [a_0, a_1, a_2, ... a_n_1, a_n]
