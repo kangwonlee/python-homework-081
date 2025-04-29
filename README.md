@@ -40,7 +40,7 @@
   ```
   Please use the following prompt :<br>사용 프롬프트 :
   ``` python
-  f'coefficeint a_{i} = '
+  f'coefficient a_{i} = '
   ```
 * Print a string 문자열 출력 : `'=========='`
 * Print the number of coefficient `n_coef` using the following f string :<br>화면에 계수의 갯수 `n_coef` 를 표시하시오. 사용 프롬프트 :
@@ -83,9 +83,9 @@
 maximum order of the polynomial in [2, 5] n = 2
 ==========
 n	       2
-coefficeint a_0 = 1
-coefficeint a_1 = -6
-coefficeint a_2 = 9
+coefficient a_0 = 1
+coefficient a_1 = -6
+coefficient a_2 = 9
 ==========
 n_coef	       3
 a_0	       1
@@ -101,11 +101,11 @@ result	       0
 maximum order of the polynomial in [2, 5] n = 4
 ==========
 n	       4
-coefficeint a_0 = 1
-coefficeint a_1 = 0
-coefficeint a_2 = 2
-coefficeint a_3 = 0
-coefficeint a_4 = 4
+a a_0 = 1
+coefficient a_1 = 0
+coefficient a_2 = 2
+coefficient a_3 = 0
+coefficient a_4 = 4
 ==========
 n_coef	       5
 a_0	       1
