@@ -99,7 +99,7 @@ result	       0
 maximum order of the polynomial in [2, 5] n = 4
 ==========
 n	       4
-a a_0 = 1
+coefficient a_0 = 1
 coefficient a_1 = 0
 coefficient a_2 = 2
 coefficient a_3 = 0
