@@ -5,7 +5,7 @@
 ## Purpose 목적:
 
 * Using the user input, let's implement a program that will evalute a polynomial.<br>사용자 입력을 받아 들여 다항식을 계산하는 프로그램을 만들어 봅시다.
-* Let's try to mimic how some of the widely used numerical software such as MATLAB and Python's NumPy evaluate a polynomial.<br>널리 사용되는 연산 소프트웨어인 MATLAB 이나 Python의 NumPy 가 다항식을 계산하는 방식을 흉내내봅시다.
+* Let's try to mimic how some of the widely used numerical software such as [MATLAB](https://www.mathworks.com/help/matlab/ref/polyval.html) and Python's [NumPy](https://numpy.org/doc/stable/reference/generated/numpy.polyval.html) evaluate a polynomial.<br>널리 사용되는 연산 소프트웨어인 [MATLAB](https://www.mathworks.com/help/matlab/ref/polyval.html) 이나 Python의 [NumPy](https://numpy.org/doc/stable/reference/generated/numpy.polyval.html) 가 다항식을 계산하는 방식을 흉내내봅시다.
 
 ## Steps 단계:
 
