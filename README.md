@@ -123,10 +123,11 @@ __Happy coding!__
 
 ## Grading Criteria 채점 기준
 
-| Criteria | Points |
-|:--------:|:------:|
-| Is the code written according to Python syntax?<br>코드가 파이썬 문법에 따라 작성되었는가? | 2 |
-| Does the code satisfy the requirements?<br>코드가 요구사항을 충족하는가? | 3 |
+| Criteria<br>기준 | Points<br>배점 |
+|:-----:|:-----:|
+| Is the code written according to Python syntax?<br>Python 문법대로 작성되었는가? | 2 |
+| Does code respect style guidelines?<br>코드 스타일 권고사항을 준수하는가? | 1 |
+| Is the result as expected?<br>결과가 예상과 같은가? | 2 |
 
 ``From here is common to all assignments.``
 
