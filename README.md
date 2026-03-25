@@ -119,6 +119,10 @@ If this variable is not set, the workflow falls back to auto-constructing the UR
 2. Use the GitHub online editor to commit and push your changes. (See below for detailed instructions)<br>GitHub 온라인 편집기를 사용하여 수정 사항을 커밋하고 푸시합니다. (자세한 사용법은 아래 참조)
 3. At the Actions tab of your Github repository, please check the result.<br>깃헙 저장소의 Actions 탭에서 결과를 확인 바랍니다.
 
+## Shared Computer Warning<br>공용 컴퓨터 사용 시 주의사항
+
+* **University labs**: Always use **incognito/private mode** (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>) to access GitHub. Closing the window automatically logs you out.<br>**대학 컴퓨터실**: 반드시 **시크릿 모드** (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>)로 GitHub에 접속하세요. 창을 닫으면 자동으로 로그아웃됩니다.
+
 ## How to Use the GitHub Online Editor<br>Github 온라인 편집기 사용법
 
 * Press the <kbd>.</kbd> key while viewing the files in your repository on GitHub. This will launch a web version of VS Code.<br>저장소의 [Code] 탭을 선택 후 <kbd>.</kbd> 키를 누르면 MS VS Code 의 Web version 이 시작됨
@@ -164,5 +168,10 @@ If this variable is not set, the workflow falls back to auto-constructing the UR
 ## Acknowledgments
 
 * The template for this assigment is registered as a part of #C-2025-016393 in the Korea Copyright Commission.
+* Various LLMs and AI tools helped implement the templates for this assignment.<br>다양한 LLM 및 AI 도구가 이 과제의 템플릿 구현에 도움을 주었습니다.
+    - Google Gemini
+    - xAI Grok3
+    - Claude.ai
+    - Perplexity Sonar
 
 ``Until here is common to all assignments.``
