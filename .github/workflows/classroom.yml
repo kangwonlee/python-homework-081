@@ -147,7 +147,7 @@ jobs:
       with:
         test-name: check syntax
         setup-command: "docker run --rm --user 1001:1001 --network none --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' '${{ env.image_url }}' python3 -m pip list"
-        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=1.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' '${{ env.image_url }}' python3 -m pytest --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.syntax }}' '${{ env.c_test }}/test_syntax.py'"
+        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=2.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' '${{ env.image_url }}' python3 -m pytest --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.syntax }}' '${{ env.c_test }}/test_syntax.py'"
         timeout: 2
         max-score: 2
 
@@ -157,7 +157,7 @@ jobs:
       with:
         test-name: check style
         setup-command: "docker run --rm --user 1001:1001 --network none --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' '${{ env.image_url }}' python3 -m pip list"
-        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=1.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' --env 'GITHUB_WORKSPACE=${{ env.c_mnt }}' '${{ env.image_url }}' python3 -m pytest --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.style }}' '${{ env.c_test }}/test_style.py'"
+        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=2.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' --env 'GITHUB_WORKSPACE=${{ env.c_mnt }}' '${{ env.image_url }}' python3 -m pytest --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.style }}' '${{ env.c_test }}/test_style.py'"
         timeout: 2
         max-score: 1
 
@@ -167,7 +167,7 @@ jobs:
       with:
         test-name: test results
         setup-command: "docker run --rm --user 1001:1001 --network none --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' '${{ env.image_url }}' python3 -m pip list"
-        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=1.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' --env 'GITHUB_WORKSPACE=${{ env.c_mnt }}' '${{ env.image_url }}' python3 -m pytest -n auto --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.results }}' '${{ env.c_test }}/test_results.py'"
+        command:       "docker run --rm --user 1001:1001 --network none --read-only --tmpfs /tmp:rw,size=64m --memory=512m --cpus=2.0 --pids-limit=128 --volume '${{ github.workspace }}:${{ env.c_mnt }}:ro' --volume '${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:rw' --env 'STUDENT_CODE_FOLDER=${{ env.c_code }}' --env 'GITHUB_WORKSPACE=${{ env.c_mnt }}' '${{ env.image_url }}' python3 -m pytest -n auto --json-report --json-report-indent=4 '--json-report-file=${{ env.CONTAINER_OUTPUT }}/${{ env.results }}' '${{ env.c_test }}/test_results.py'"
         timeout: 5
         max-score: 2
 
@@ -186,7 +186,7 @@ jobs:
       run: |
         docker run --rm --user 1001:1001 \
           --read-only --tmpfs /tmp:rw,size=64m \
-          --memory=512m --cpus=1.0 --pids-limit=128 \
+          --memory=512m --cpus=2.0 --pids-limit=128 \
           --volume "${{ github.workspace }}:${{ env.c_mnt }}:ro" \
           --volume "${{ env.WORKSPACE_OUTPUT }}:${{ env.CONTAINER_OUTPUT }}:ro" \
           --env "INPUT_REPORT-FILES=${{ env.CONTAINER_OUTPUT }}/${{ env.results }},${{ env.CONTAINER_OUTPUT }}/${{ env.syntax }},${{ env.CONTAINER_OUTPUT }}/${{ env.style }}" \
