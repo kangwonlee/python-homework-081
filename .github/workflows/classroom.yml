@@ -24,7 +24,7 @@ permissions:
 
 jobs:
   grade:
-    uses: kangwonlee/workflows-central/.github/workflows/classroom-reusable.yml@v3.0.0
+    uses: kangwonlee/workflows-central/.github/workflows/classroom-reusable.yml@v3.2.0
     with:
       instructor_org: ${{ vars.INSTRUCTOR_ORG }}
     secrets: inherit
